@@ -5,11 +5,21 @@
 </form>
 
 {{ newSymbol }}
-
+<p>Angularjs call below. Check source code, to see how google see you</p>
 <div ng-controller="StockCtrl">
 <ul>
   <li ng-repeat="stock in stocks">
   {{ stock.symbol }}, {{stock.name}}
   </li>
 </ul>
+</div>
+<p>Render by rails, check how google see the site</p>
+<div>
+  <ul>
+     <% Stock.all.each do |s| %>
+      <li>
+        <%= s.symbol %>, <%= s.name %>
+      </li>
+     <% end %>
+  </ul>
 </div>
