@@ -7,4 +7,6 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'therubyrhino'
 gem 'jquery-rails'
 gem 'puma'
+gem 'angularjs-rails'
+
 
